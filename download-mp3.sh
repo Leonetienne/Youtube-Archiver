@@ -1,0 +1,11 @@
+yt-dlp \
+-a linklist-music.txt \
+-c \
+--extract-audio \
+--audio-format mp3 \
+--merge-output-format mkv \
+-o 'music/%(uploader)s/%(title)s.%(ext)s' \
+--extractor-args youtube:player_client=android \
+--throttled-rate 100M \
+--restrict-filenames \
+--download-archive alreadydownloaded-music.txt
