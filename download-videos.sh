@@ -6,4 +6,4 @@ yt-dlp \
 --extractor-args youtube:player_client=android \
 --throttled-rate 100M \
 --restrict-filenames \
---download-archive alreadydownloaded-video.txt
+--download-archive alreadydownloaded-videos.txt
