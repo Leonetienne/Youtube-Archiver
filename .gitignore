@@ -1,3 +1,4 @@
+# Disallow my private stuff
 /music/
 /videos/
 /linklist-*
@@ -6,3 +7,6 @@
 
 # Explicitly allow encrypted versions of my lists
 !/*.crypt
+
+# Explicitly allow the example linklist file
+!/linklist-example.yaml

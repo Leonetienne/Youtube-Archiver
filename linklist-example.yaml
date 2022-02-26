@@ -1,0 +1,33 @@
+# This is an example linklist file, just to show the data structure.
+# This structure is identical to the linklist-videos.yaml, and to the linklist-music.yaml files. (You have to create these yourself, in repository-root!)
+# If this file is called linklist-videos.yaml, all entries would be downloaded as videos. If you'd call it linklist-music.yaml, all entries would be downloaded as mp3 files.
+
+# Important logic:
+#   - Entries are seperated via a single line containting "-".
+#   - All entries MUST provide the member "url".
+#   - An entry CAN specificy a "folder-name", but does not HAVE to. If not, the "folder-name" will default to a videos uploader. You might want to specify it for playlists!
+
+
+
+# Let's look at a few simple entries:
+
+# We want to download all the stuff of Eminem!
+# Eminem
+-
+  url: https://www.youtube.com/c/eminem/videos
+  folder-name: Eminem # We want to explicitly state the directory name, since the uploader is sometimes "Eminem" and sometimes "EminemVEVO". We want it all in one place!
+
+# Let's also download all the stuff of DJ S3RL.
+# Since S3RL does not do any of that VEVO bs, we can just let the folder-name default to the uploaders name.
+# S3RL
+-
+  url: https://www.youtube.com/channel/UCb6JTMjrHZCYFD9Y04CBk9g
+
+
+# Let's say we have a playlist with stuff from a gazillion different uploaders.
+# Letting the "folder-name" default, would wreak havoc upon the file-structure, since the playlist would be spread over a gazillion different directories, one for each uploader.
+# So, let's again explicitly specify the directory name
+# Snoop Dogg
+-
+  url: https://www.youtube.com/watch?v=zV-Xcy_bF2w&list=PL75C4B43E5F60A82C
+  folder-name: Snoog Dogg
