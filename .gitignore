@@ -3,3 +3,6 @@
 /linklist-*
 /alreadydownloaded*.txt
 /once.yaml
+
+# Explicitly allow encrypted versions of my lists
+!/*.crypt
