@@ -8,7 +8,7 @@ with open("linklist-videos.yaml", "r") as yamlfile:
         for entry in config:
             print(f"\033[92mGrabbing '{entry['url']}':")
 
-            folderName = entry["folder-name"] if "folder-name" in entry else "\%(uploader)s"  
+            folderName = entry["folder-name"] if "folder-name" in entry else "%(uploader)s"  
             
             os.system(f"""
                 yt-dlp
