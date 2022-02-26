@@ -2,7 +2,7 @@
 ***Always** keep a local backup.*
 
 This utility allows you to define a collection of links to youtube-channels and/or playlists, which you want to keep synced to your local storage.
-All you have to do is to call `download.sh`, which will download all videos of your defined playlists that are not already saved locally.
+All you have to do is to call `download.sh`, which will download all videos and mp3's of your defined playlists that are not already saved locally.
 
 This basically means, after doing the initial big download, you could run it as a cronjob, since it won't take long when it's only downloading newly uploaded videos.
 
