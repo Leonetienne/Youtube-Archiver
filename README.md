@@ -56,7 +56,7 @@ This allows you to bypass ALL your other lists, to quickly and cleanly download 
 Since i use WSL, and like to store my archives on my nas, i made a quick script to move downloads from my local instance to my nas.
 Without saying, you would have to adjust your nas drive-letter and target paths...
 
-## Noteworthy stuff
+## Idea
 This project is building upon [Backup Script with yt-dlp](https://igel.hostedbymyself.de/s/C77Zj-PBL#).
 
 # LICENSE
