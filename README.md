@@ -26,15 +26,14 @@ First, you define the stuff you want to download, in yaml files. For more info o
 # Snoop Dogg
 -
   url: https://www.youtube.com/watch?v=zV-Xcy_bF2w&list=PL75C4B43E5F60A82C
-  folder-name: Snoog Dogg
+  folder-name: Snoop Dogg
 ```
 
 #### 2
 Secondly, calling `download.sh` will invoke the two python scripts responsible for downloading.
 
-#### 3
 These python scripts will invoke [yt-dlp](https://github.com/yt-dlp/yt-dlp) for each link supplied. Yt-dlp runs in download-archive mode,
-which basically means it won't download a video twice. It will save it's video ID and check if it's already saved before downloading.
+which basically means it won't download a video twice. It will save it's video IDs and check if it's already saved before downloading.
 
 Files will be saved to `./videos/<folder>/` and `./music/<folder>/`.
 
