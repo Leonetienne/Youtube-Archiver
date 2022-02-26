@@ -56,7 +56,7 @@ Since i use WSL, and like to store my archives on my nas, i made a quick script 
 Without saying, you would have to adjust your nas drive-letter and target paths...
 
 ## Idea
-This project is building upon [Backup Script with yt-dlp](https://igel.hostedbymyself.de/s/C77Zj-PBL#), [@xaverruss](https://github.com/xaverruss).
+This project is building upon [Backup Script with yt-dlp](https://igel.hostedbymyself.de/s/C77Zj-PBL#), [@xaverruss](https://github.com/xaverruss), which is building upon the [yt-dlp](https://github.com/yt-dlp/yt-dlp) cli.
 
 # LICENSE
 ```
