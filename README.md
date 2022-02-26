@@ -37,10 +37,10 @@ which basically means it won't download a video twice. It will save video IDs an
 
 Files will be saved to `./videos/<folder>/` and `./music/<folder>/`.
 
-## Installing / Setup
+## Installation / Setup
 1) Clone this repository
-2) Create `linklist-videos.yaml` and `linklist-music.yaml` and populate these to your linking.
-3) Make sure you have Python3 and [yt-dlp](https://github.com/yt-dlp/yt-dlp) installed.
+2) Create `linklist-videos.yaml` and `linklist-music.yaml` in repository-root and populate these to your liking.
+3) Make sure you have Python3 and [yt-dlp](https://github.com/yt-dlp/yt-dlp) installed. (Thoe commands `python3` and `yt-dlp` should be available!)
 4) Done.
 
 ## Other noteworthy utilities
