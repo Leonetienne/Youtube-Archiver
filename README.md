@@ -33,7 +33,7 @@ First, you define the stuff you want to download, in yaml files. For more info o
 Secondly, calling `download.sh` will invoke the two python scripts responsible for downloading.
 
 These python scripts will invoke [yt-dlp](https://github.com/yt-dlp/yt-dlp) for each link supplied. Yt-dlp runs in download-archive mode,
-which basically means it won't download a video twice. It will save it's video IDs and check if it's already saved before downloading.
+which basically means it won't download a video twice. It will save video IDs and check if a video already saved before downloading.
 
 Files will be saved to `./videos/<folder>/` and `./music/<folder>/`.
 
