@@ -2,7 +2,7 @@
 ***Always** keep a local backup.*
 
 This utility allows you to define a collection of links to youtube-channels and/or playlists, which you want to keep synced to your local storage.
-All you have to do is to call `download.sh`, which will download all videos of your defined playlists that are not already saved locally.
+All you have to do is to call `download.sh`, which will download all videos and mp3's of your defined playlists that are not already saved locally.
 
 This basically means, after doing the initial big download, you could run it as a cronjob, since it won't take long when it's only downloading newly uploaded videos.
 
@@ -26,22 +26,21 @@ First, you define the stuff you want to download, in yaml files. For more info o
 # Snoop Dogg
 -
   url: https://www.youtube.com/watch?v=zV-Xcy_bF2w&list=PL75C4B43E5F60A82C
-  folder-name: Snoog Dogg
+  folder-name: Snoop Dogg
 ```
 
 #### 2
 Secondly, calling `download.sh` will invoke the two python scripts responsible for downloading.
 
-#### 3
 These python scripts will invoke [yt-dlp](https://github.com/yt-dlp/yt-dlp) for each link supplied. Yt-dlp runs in download-archive mode,
-which basically means it won't download a video twice. It will save it's video ID and check if it's already saved before downloading.
+which basically means it won't download a video twice. It will save video IDs and check if a video already saved before downloading.
 
 Files will be saved to `./videos/<folder>/` and `./music/<folder>/`.
 
-## Installing / Setup
+## Installation / Setup
 1) Clone this repository
-2) Create `linklist-videos.yaml` and `linklist-music.yaml` and populate these to your linking.
-3) Make sure you have Python3 and [yt-dlp](https://github.com/yt-dlp/yt-dlp) installed.
+2) Create `linklist-videos.yaml` and `linklist-music.yaml` in repository-root and populate these to your liking.
+3) Make sure you have Python3 and [yt-dlp](https://github.com/yt-dlp/yt-dlp) installed. (The commands `python3` and `yt-dlp` should be available!)
 4) Done.
 
 ## Other noteworthy utilities
@@ -57,7 +56,7 @@ Since i use WSL, and like to store my archives on my nas, i made a quick script 
 Without saying, you would have to adjust your nas drive-letter and target paths...
 
 ## Idea
-This project is building upon [Backup Script with yt-dlp](https://igel.hostedbymyself.de/s/C77Zj-PBL#).
+This project is building upon [Backup Script with yt-dlp](https://igel.hostedbymyself.de/s/C77Zj-PBL#), [@xaverruss](https://github.com/xaverruss), which is building upon the [yt-dlp](https://github.com/yt-dlp/yt-dlp) cli.
 
 # LICENSE
 ```
