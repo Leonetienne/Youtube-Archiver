@@ -11,3 +11,7 @@
 # Explicitly allow example files
 !/linklist-example.yaml
 !/once-example.yaml
+
+# Disallow swapfiles
+*.swp
+

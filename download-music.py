@@ -6,11 +6,11 @@ with open("linklist-music.yaml", "r") as yamlfile:
         config = yaml.safe_load(yamlfile)
 
         for entry in config:
-            print(f"\033[92mGrabbing '{entry['url']}':")
+            print(f"\033[92mGrabbing '{entry['url']}':\033[0m")
 
-            folderName = entry["folder-name"] if "folder-name" in entry else "%(uploader)s"  
-            
+            folderName = entry["folder-name"] if "folder-name" in entry else "%(uploader)s"
             os.system(f"""
+
                 yt-dlp
                 -c
                 --extract-audio
@@ -24,7 +24,6 @@ with open("linklist-music.yaml", "r") as yamlfile:
                 '{entry['url']}'
                 """.replace('\n', " ")
             )
-                
 
     except yaml.YAMLError as exc:
         print("You fucked up the yaml format.")

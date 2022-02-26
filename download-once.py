@@ -7,9 +7,9 @@ with open("once.yaml", "r") as yamlfile:
         config = yaml.safe_load(yamlfile)
 
         for entry in config:
-            print(f"\033[92mGrabbing {entry['type']} '{entry['url']}':")
-            
+            print(f"\033[92mGrabbing {entry['type']} '{entry['url']}':\033[1m")
             if entry["type"] == "music":
+
                 os.system(f"""
                     yt-dlp
                     -c
@@ -23,7 +23,7 @@ with open("once.yaml", "r") as yamlfile:
                     '{entry['url']}'
                     """.replace('\n', " ")
                 )
-                
+
             elif entry["type"] == "video" or entry["type"] == "videos":
                 os.system(f"""
                     yt-dlp
@@ -40,3 +40,4 @@ with open("once.yaml", "r") as yamlfile:
 
     except yaml.YAMLError as exc:
         print("You fucked up the yaml format.")
+
