@@ -1,2 +1,2 @@
-./download-videos.sh
-./download-music.sh
+python3 ./download-videos.py
+python3 ./download-music.py
