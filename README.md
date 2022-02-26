@@ -44,6 +44,18 @@ Files will be saved to `./videos/<folder>/` and `./music/<folder>/`.
 3) Make sure you have Python3 and [yt-dlp](https://github.com/yt-dlp/yt-dlp) installed.
 4) Done.
 
+## Other noteworthy utilities
+### Download once
+You can create a `once.yaml` [(See example)](https://github.com/Leonetienne/Youtube-Archiver/blob/master/once-example.yaml), which is of the same structure as all the other linklists (except it needs a `type`=[`video`/`music`]), and `folder-name` is a required attribute.
+You can download this linklist with `python3 download-once.py`.
+What's the purpose of this? If you find a nice playlist, which won't ever update, why would you want to fetch it every time running the cronjob?
+Just adding it to a download list and running the cronjob is shit aswell, because fetching all the other items still takes time.
+This allows you to bypass ALL your other lists, to quickly and cleanly download a playlist (or multiple) **once**.
+
+### sync-to-nas.bat
+Since i use WSL, and like to store my archives on my nas, i made a quick script to move downloads from my local instance to my nas.
+Without saying, you would have to adjust your nas drive-letter and target paths...
+
 # LICENSE
 ```
 BSD 2-Clause License

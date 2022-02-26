@@ -1,0 +1,10 @@
+# What's the purpose of this? If you find a nice playlist, which won't ever update, why would you want to fetch it every time running the cronjob?
+# Just adding it to a download list and running the cronjob is shit aswell, because fetching all the other items still takes time.
+# This allows you to bypass ALL your other lists, to quickly and cleanly download a playlist (or multiple) **once**.
+# This filename should be "once.yaml".
+
+# All three attributes are REQUIRED!
+-
+  url: https://www.youtube.com/watch?v=zV-Xcy_bF2w&list=PL75C4B43E5F60A82C
+  folder-name: Snoog Dogg
+  type: music # This has to be either music or video

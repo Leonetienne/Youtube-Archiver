@@ -8,5 +8,6 @@
 # Explicitly allow encrypted versions of my lists
 !/*.crypt
 
-# Explicitly allow the example linklist file
+# Explicitly allow example files
 !/linklist-example.yaml
+!/once-example.yaml
