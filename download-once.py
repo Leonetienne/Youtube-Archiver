@@ -20,6 +20,7 @@ with open("once.yaml", "r") as yamlfile:
                     --throttled-rate 100M
                     --restrict-filenames
                     --download-archive alreadydownloadedonce-music.txt
+                    --match-filter "duration < 36000"
                     '{entry['url']}'
                     """.replace('\n', " ")
                 )
@@ -34,6 +35,7 @@ with open("once.yaml", "r") as yamlfile:
                     --throttled-rate 100M
                     --restrict-filenames
                     --download-archive alreadydownloadedonce-videos.txt
+                    --match-filter "duration < 36000"
                     '{entry['url']}'
                     """.replace('\n', " ")
                 )

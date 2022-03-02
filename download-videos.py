@@ -19,6 +19,7 @@ with open("linklist-videos.yaml", "r") as yamlfile:
                 --throttled-rate 100M
                 --restrict-filenames
                 --download-archive alreadydownloaded-videos.txt
+                --match-filter "duration < 36000"
                 '{entry['url']}'
                 """.replace('\n', " ")
             )
