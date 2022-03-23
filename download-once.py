@@ -1,3 +1,4 @@
+#!/bin/python
 # This script is for downloading stuff ONCE. This is for, let's say, playlists that will never change again that you want to download.
 import yaml
 import os
