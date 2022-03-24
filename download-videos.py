@@ -14,6 +14,7 @@ with open("linklist-videos.yaml", "r") as yamlfile:
             os.system(f"""
                 yt-dlp
                 -c
+                --no-call-home
                 --merge-output-format mkv
                 -o 'videos/{folderName}/%(title)s.%(ext)s'
                 --extractor-args youtube:player_client=android

@@ -14,6 +14,7 @@ with open("linklist-music.yaml", "r") as yamlfile:
 
                 yt-dlp
                 -c
+                --no-call-home
                 --extract-audio
                 --audio-format mp3
                 --merge-output-format mkv

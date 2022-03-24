@@ -14,6 +14,7 @@ with open("once.yaml", "r") as yamlfile:
                 os.system(f"""
                     yt-dlp
                     -c
+                    --no-call-home
                     --extract-audio
                     --audio-format mp3
                     -o 'music/{entry['folder-name']}/%(title)s.%(ext)s'
@@ -30,6 +31,7 @@ with open("once.yaml", "r") as yamlfile:
                 os.system(f"""
                     yt-dlp
                     -c
+                    --no-call-home
                     --merge-output-format mkv
                     -o 'videos/{entry['folder-name']}/%(title)s.%(ext)s'
                     --extractor-args youtube:player_client=android
