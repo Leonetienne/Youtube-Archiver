@@ -51,9 +51,10 @@ What's the purpose of this? If you find a nice playlist, which won't ever update
 Just adding it to a download list and running the cronjob is shit aswell, because fetching all the other items still takes time.  
 This allows you to bypass ALL your other lists, to quickly and cleanly download a playlist (or multiple) **once**.
 
-### sync-to-nas.bat
-Since i use WSL, and like to store my archives on my nas, i made a quick script to move downloads from my local instance to my nas.
-Without saying, you would have to adjust your nas drive-letter and target paths...
+### sync-to-nas.sh
+Since I like to store my archives on my nas, I made a quick script to move downloads from my local instance to my nas.
+Without saying, you would have to adjust your nas drive path...  
+If you're using windows, there's also a bat version.
 
 ## Idea
 This project is building upon [Backup Script with yt-dlp](https://igel.hostedbymyself.de/s/C77Zj-PBL#), [@xaverruss](https://github.com/xaverruss), which is building upon the [yt-dlp](https://github.com/yt-dlp/yt-dlp) cli.
