@@ -23,7 +23,7 @@ with open("linklist-music.yaml", "r") as yamlfile:
                 --throttled-rate 100M
                 --restrict-filenames
                 --download-archive alreadydownloaded-music.txt
-                --match-filter "duration < 36000"
+                --match-filter "duration < 36000 & is_live = false"
                 '{entry['url']}'
                 """.replace('\n', " ")
             )
