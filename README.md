@@ -10,7 +10,7 @@ This basically means, after doing the initial big download, you could run it as 
 Pretty easily.
 
 #### 1
-First, you define the stuff you want to download, in yaml files. For more info on syntax, see the [example file](https://github.com/Leonetienne/Youtube-Archiver/blob/master/linklist-example.yaml).
+First, you define the stuff you want to download, in yaml files. For more info on syntax, see the [example file](https://gitea.leonetienne.de/leonetienne/Youtube-Archiver/src/branch/master/linklist-example.yaml).
 ```yaml
 # linklist-music.yaml
 
@@ -45,7 +45,7 @@ Files will be saved to `./videos/<folder>/` and `./music/<folder>/`.
 
 ## Other noteworthy utilities
 ### Download once
-You can create a `once.yaml` [(See example)](https://github.com/Leonetienne/Youtube-Archiver/blob/master/once-example.yaml), which is of the same structure as all the other linklists (except it needs a `type`=[`video`/`music`]), and `folder-name` is a required attribute.  
+You can create a `once.yaml` [(See example)](https://gitea.leonetienne.de/leonetienne/Youtube-Archiver/src/branch/master/once-example.yaml), which is of the same structure as all the other linklists (except it needs a `type`=[`video`/`music`]), and `folder-name` is a required attribute.  
 You can download this linklist with `python3 download-once.py`.  
 What's the purpose of this? If you find a nice playlist, which won't ever update, why would you want to fetch it every time running the cronjob?  
 Just adding it to a download list and running the cronjob is shit aswell, because fetching all the other items still takes time.  
